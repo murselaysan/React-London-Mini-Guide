@@ -8,7 +8,7 @@ import './App.css';
 
 
 function App() {
-  const [isVisible, setIsVisible] = useState({
+  const [isactive, setIsActive] = useState({
     pharmacies: false,
     highSchools: false,
     colleges: false,
@@ -16,6 +16,7 @@ function App() {
     Gps: false
 
   });
+  const [data, setData] = useState([]);
   return (
     <div className="App">
      <Header />
