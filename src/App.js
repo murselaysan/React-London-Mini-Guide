@@ -18,6 +18,8 @@ function App() {
   });
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [city, setCity] = useState('');
+  const [err, setErr] = useState(false);
   return (
     <div className="App">
      <Header />
@@ -27,6 +29,9 @@ function App() {
         <option value="stratford" >Stratford</option>
         <option value='heathrow'>Heathrow</option>
       </select>
+      {
+        err && <><hr className="mt-2 mb-2" /><div className="alert-danger" ><h5>check out your request, a city and category must be chosen, No default values are provided</h5></div></>
+      }
     </div>
   );
 }
