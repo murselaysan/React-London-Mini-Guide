@@ -8,6 +8,14 @@ import './App.css';
 
 
 function App() {
+  const [isVisible, setIsVisible] = useState({
+    pharmacies: false,
+    highSchools: false,
+    colleges: false,
+    hospitals: false,
+    Gps: false
+
+  });
   return (
     <div className="App">
      <Header />
