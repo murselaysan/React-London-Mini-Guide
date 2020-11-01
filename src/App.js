@@ -17,6 +17,7 @@ function App() {
 
   });
   const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(false);
   return (
     <div className="App">
      <Header />
