@@ -6,7 +6,7 @@ import Header from "./Header";
 import './App.css';
 import Navbar from './Navbar';
 import Table from './Table';
-
+import Data  from "./data/Harrow.json"
 
 
 function App() {
@@ -28,7 +28,7 @@ function App() {
     <div className="App">
      <Header />
      <Navbar />
-     <Table />
+     <Table info ={Data} />
      
     </div>
   );
